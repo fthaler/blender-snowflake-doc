@@ -1,0 +1,130 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Parameters
+
+The parameter names of the physical model are rather abstract Greek letters.
+These are directly taken from the original publication {cite:p}`gravner2008`.
+Here, we give some examples and hints of what the parameters mean.
+
+However, all of them influence the shape of the snowflake in some complex way.
+So, often it’s easiest to start with one of the given [](presets.md) that looks like a good starting point for the desired look.
+Then, it’s often good to just vary one parameter at a time (manually or random) to get a good-looking snowflake.
+
+## Examples of Parameters’ Influence on the Shape
+
+Here, you see some examples with varying parameters, just to get an idea of how the parameter values can change the appearance of a snowflake.
+{numref}`varying-rho` shows the effect of varying ρ, {numref}`varying-beta` shows the effect of varying β, {numref}`varying-kappa` shows the effect of varying κ and {numref}`varying-mu` shows the effect of varying μ.
+
+
+```{subfigure} ABC|DEF
+:name: varying-rho
+:subcaptions: below
+:layout-sm: AB|CD|EF
+:gap: 1em
+
+![ρ = 0.4 ](../_static/presets/Paper_Fig_9tl.jpg)
+![ρ = 0.41](../_static/presets/Paper_Fig_9tm.jpg)
+![ρ = 0.42](../_static/presets/Paper_Fig_9tr.jpg)
+![ρ = 0.44](../_static/presets/Paper_Fig_9bl.jpg)
+![ρ = 0.46](../_static/presets/Paper_Fig_9bm.jpg)
+![ρ = 0.5 ](../_static/presets/Paper_Fig_9br.jpg)
+
+Effect of varying parameter ρ.
+These are available as presets *Paper Fig 9x* [^paperpresets].
+```
+
+```{subfigure} ABC|DEF
+:name: varying-beta
+:subcaptions: below
+:layout-sm: AB|CD|EF
+:gap: 1em
+
+![β = 1.9](../_static/presets/Paper_Fig_10tl.jpg)
+![β = 2.2](../_static/presets/Paper_Fig_10tm.jpg)
+![β = 2.4](../_static/presets/Paper_Fig_10tr.jpg)
+![β = 2.6](../_static/presets/Paper_Fig_10bl.jpg)
+![β = 2.7](../_static/presets/Paper_Fig_10bm.jpg)
+![β = 2.8](../_static/presets/Paper_Fig_10br.jpg)
+
+Effect of varying parameter β.
+These are available as presets *Paper Fig 10x* [^paperpresets].
+```
+
+```{subfigure} ABC|DEF
+:name: varying-kappa
+:subcaptions: below
+:layout-sm: AB|CD|EF
+:gap: 1em
+
+![κ = 0.001 ](../_static/presets/Paper_Fig_11tl.jpg)
+![κ = 0.0025](../_static/presets/Paper_Fig_11tm.jpg)
+![κ = 0.005 ](../_static/presets/Paper_Fig_11tr.jpg)
+![κ = 0.0075](../_static/presets/Paper_Fig_11bl.jpg)
+![κ = 0.01  ](../_static/presets/Paper_Fig_11bm.jpg)
+![κ = 0.02  ](../_static/presets/Paper_Fig_11br.jpg)
+
+Effect of varying parameter κ.
+These are available as presets *Paper Fig 11x* [^paperpresets].
+```
+
+```{subfigure} ABC|DEF
+:name: varying-mu
+:subcaptions: below
+:layout-sm: AB|CD|EF
+:gap: 1em
+
+![μ = 0.04](../_static/presets/Paper_Fig_12tl.jpg)
+![μ = 0.05](../_static/presets/Paper_Fig_12tm.jpg)
+![μ = 0.06](../_static/presets/Paper_Fig_12tr.jpg)
+![μ = 0.07](../_static/presets/Paper_Fig_12bl.jpg)
+![μ = 0.08](../_static/presets/Paper_Fig_12bm.jpg)
+![μ = 0.09](../_static/presets/Paper_Fig_12br.jpg)
+
+Effect of varying parameter μ.
+These are available as presets *Paper Fig 12x* [^paperpresets].
+```
+
+[^paperpresets]: All examples here are directly accessible from the add-on’s sidebar menu. Note that the results may differ from these in the research paper because they are generated with a different number of simulation steps.
+
+## Physical Model Details
+
+```{note}
+The knowledge presented here is quite technical and not required to generate beautiful snowflakes.
+So, feel free to skip it, if you don’t care about the mathematical details!
+```
+
+For a full description of the physical snowflake growth model, consider reading the paper by {cite:t}`gravner2008`.
+
+The model keeps track of where the snowflake has already crystallized and three additional variables:
+
+- The *boundary mass*, amount of quasi-liquid water *at the boundary of the snowflake*,
+- the *crystal mass*, amount of ice *at the boundary and in the snowflake*, and
+- the *diffusive mass* or vapor mass – amount of water vapor *around the snowflake*.
+
+A single step of the simulation consists of the following sub-steps:
+
+1. *Diffusion* of water mass / vapor in the air around the snowflake.
+2. *Freezing* of water in the boundary layer of the snowflake. κ controls the amount of freezing, that is transforming vapor into liquid and crystal mass.
+3. *Attachment* of ice to the existing snow crystal, that is, snowflake growth. α, β and θ influence this step.
+4. *Melting* is the inverse of freezing, transforming boundary water and crystal mass back into vapor.
+5. *Noise* optionally introduces some randomness, to break the otherwise perfect symmetry.
+
+## Parameter Details
+
+The following table describes the effect of the parameters in more detail:
+
+| Parameter | Meaning |
+| --------- | ------- |
+| ρ | Amount of vapor around the snowflake. More vapor means faster growth. Also, lower values lead to plate-like structures, while higher values lead to dendrites. |
+| β | Anisotropy of the freezing step. Higher values mean less freezing on tips and thus lead to more straight boundary areas. Thus, lower values typically give finer structures, higher values give plate-like snowflakes. |
+| α | Amount of boundary mass required for attachment in ridges. Together with θ, this controls the amount of branching in ridges. |
+| θ | Amount of max. nearby vapor allowed for attachment in ridges. Together with α, this controls the amount of branching in ridges. |
+| κ | Amount of freezing at the boundary. Higher values typically lead to more branching. |
+| μ | Amount of water mass transformed back into vapor. Higher values typically lead to more plate-like structures. |
+| γ | Amount of crystal mass transformed back into vapor. Similar effect as μ. |
+| σ | Amount of randomness added to the vapor density[^sigmanote]. |
+| Δρ | Relative increase of vapor added in each simulation step[^deltarhonote]. Can simulate the fall of a snowflake through varying atmosphere conditions. |
+
+[^sigmanote]: σ is the only parameter which is implemented slightly different than in the original paper: in our implementation, randomness is only added on the *boundary* of the snowflake rather than the whole simulation domain. This might require higher values for σ to reach comparable results to these in the paper.
+[^deltarhonote]: The name Δρ is not used in the original paper, but the same effect is used in many figures. In the appendix of the paper there is a table with all used parameter values (‘parameter values used in figures’). There, our Δρ corresponds to their footnote *b* – ‘the proportion of increase in diffusive mass at each time step’.

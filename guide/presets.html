@@ -1,0 +1,558 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Parameters" href="parameters.html" /><link rel="prev" title="Guide" href="index.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.09.10 -->
+        <title>Presets -  Snowflake</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=369552022d0b975c8e74270ce6eabe0fb7978f24" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="../_static/style/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --font-stack: InterVariable;
+  --color-brand-primary: #e87d0d;
+  --color-brand-content: #e87d0d;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #e87d0d;
+  --color-brand-content: #e87d0d;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-brand-primary: #e87d0d;
+  --color-brand-content: #e87d0d;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand"><img style="width: 1em; position: relative; top: 0.35em" src="_static/blender_community_badge_orange.svg"></img>&emsp;Snowflake</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="../_static/logo.svg" alt="Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text"><img style="width: 1em; position: relative; top: 0.35em" src="_static/blender_community_badge_orange.svg"></img>&emsp;Snowflake</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Presets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operators.html">Python API / Operators</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Bibliography</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="presets">
+<h1>Presets<a class="headerlink" href="#presets" title="Permalink to this heading">#</a></h1>
+<section id="how-to-apply-a-preset">
+<h2>How to Apply a Preset<a class="headerlink" href="#how-to-apply-a-preset" title="Permalink to this heading">#</a></h2>
+<p>Presets can be found at the top of the sidebar menu.
+Just create a snowflake, select the preset and grow it!</p>
+</section>
+<section id="gallery">
+<h2>Gallery<a class="headerlink" href="#gallery" title="Permalink to this heading">#</a></h2>
+<p>These are renderings of all available presets.
+Currently, all presets are derived from the figures in the original publication <span id="id1">[<a class="reference internal" href="../bibliography.html#id2" title="Janko Gravner and David Griffeath. Modeling snow crystal growth ii: a mesoscopic lattice map with plausible dynamics. Physica D: Nonlinear Phenomena, 237(3):385-404, 2008. doi:https://doi.org/10.1016/j.physd.2007.09.008.">GG08</a>]</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The look of the presets depends a lot on the number of simulation steps.
+Here, we only show one picture per preset, but they can also look quite differently if you let them grow shorter or longer.</p>
+</div>
+<figure class="align-left" id="id2">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_2tr.jpg"><img alt="../_images/Paper_Fig_2tr.jpg" src="../_images/Paper_Fig_2tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Paper Fig 2tr</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id3">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_2br.jpg"><img alt="../_images/Paper_Fig_2br.jpg" src="../_images/Paper_Fig_2br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Paper Fig 2br</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id4">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_4.jpg"><img alt="../_images/Paper_Fig_4.jpg" src="../_images/Paper_Fig_4.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Paper Fig 4</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id5">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_6b.jpg"><img alt="../_images/Paper_Fig_6b.jpg" src="../_images/Paper_Fig_6b.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Paper Fig 6b</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id6">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9tl.jpg"><img alt="../_images/Paper_Fig_9tl.jpg" src="../_images/Paper_Fig_9tl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Paper Fig 9tl</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id7">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9tm.jpg"><img alt="../_images/Paper_Fig_9tm.jpg" src="../_images/Paper_Fig_9tm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Paper Fig 9tm</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id8">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9tr.jpg"><img alt="../_images/Paper_Fig_9tr.jpg" src="../_images/Paper_Fig_9tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Paper Fig 9tr</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id9">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9bl.jpg"><img alt="../_images/Paper_Fig_9bl.jpg" src="../_images/Paper_Fig_9bl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Paper Fig 9bl</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id10">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9bm.jpg"><img alt="../_images/Paper_Fig_9bm.jpg" src="../_images/Paper_Fig_9bm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Paper Fig 9bm</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id11">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_9br.jpg"><img alt="../_images/Paper_Fig_9br.jpg" src="../_images/Paper_Fig_9br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Paper Fig 9br</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id12">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10tl.jpg"><img alt="../_images/Paper_Fig_10tl.jpg" src="../_images/Paper_Fig_10tl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Paper Fig 10tl</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id13">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10tm.jpg"><img alt="../_images/Paper_Fig_10tm.jpg" src="../_images/Paper_Fig_10tm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Paper Fig 10tm</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id14">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10tr.jpg"><img alt="../_images/Paper_Fig_10tr.jpg" src="../_images/Paper_Fig_10tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Paper Fig 10tr</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id15">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10bl.jpg"><img alt="../_images/Paper_Fig_10bl.jpg" src="../_images/Paper_Fig_10bl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Paper Fig 10bl</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id16">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10bm.jpg"><img alt="../_images/Paper_Fig_10bm.jpg" src="../_images/Paper_Fig_10bm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Paper Fig 10bm</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id17">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_10br.jpg"><img alt="../_images/Paper_Fig_10br.jpg" src="../_images/Paper_Fig_10br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Paper Fig 10br</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id18">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11tl.jpg"><img alt="../_images/Paper_Fig_11tl.jpg" src="../_images/Paper_Fig_11tl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Paper Fig 11tl</span><a class="headerlink" href="#id18" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id19">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11tm.jpg"><img alt="../_images/Paper_Fig_11tm.jpg" src="../_images/Paper_Fig_11tm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Paper Fig 11tm</span><a class="headerlink" href="#id19" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id20">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11tr.jpg"><img alt="../_images/Paper_Fig_11tr.jpg" src="../_images/Paper_Fig_11tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Paper Fig 11tr</span><a class="headerlink" href="#id20" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id21">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11bl.jpg"><img alt="../_images/Paper_Fig_11bl.jpg" src="../_images/Paper_Fig_11bl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Paper Fig 11bl</span><a class="headerlink" href="#id21" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id22">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11bm.jpg"><img alt="../_images/Paper_Fig_11bm.jpg" src="../_images/Paper_Fig_11bm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Paper Fig 11bm</span><a class="headerlink" href="#id22" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id23">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_11br.jpg"><img alt="../_images/Paper_Fig_11br.jpg" src="../_images/Paper_Fig_11br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Paper Fig 11br</span><a class="headerlink" href="#id23" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id24">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12tl.jpg"><img alt="../_images/Paper_Fig_12tl.jpg" src="../_images/Paper_Fig_12tl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Paper Fig 12tl</span><a class="headerlink" href="#id24" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id25">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12tm.jpg"><img alt="../_images/Paper_Fig_12tm.jpg" src="../_images/Paper_Fig_12tm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Paper Fig 12tm</span><a class="headerlink" href="#id25" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id26">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12tr.jpg"><img alt="../_images/Paper_Fig_12tr.jpg" src="../_images/Paper_Fig_12tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Paper Fig 12tr</span><a class="headerlink" href="#id26" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id27">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12bl.jpg"><img alt="../_images/Paper_Fig_12bl.jpg" src="../_images/Paper_Fig_12bl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Paper Fig 12bl</span><a class="headerlink" href="#id27" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id28">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12bm.jpg"><img alt="../_images/Paper_Fig_12bm.jpg" src="../_images/Paper_Fig_12bm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Paper Fig 12bm</span><a class="headerlink" href="#id28" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id29">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_12br.jpg"><img alt="../_images/Paper_Fig_12br.jpg" src="../_images/Paper_Fig_12br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Paper Fig 12br</span><a class="headerlink" href="#id29" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id30">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_13l.jpg"><img alt="../_images/Paper_Fig_13l.jpg" src="../_images/Paper_Fig_13l.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Paper Fig 13l</span><a class="headerlink" href="#id30" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id31">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_13m.jpg"><img alt="../_images/Paper_Fig_13m.jpg" src="../_images/Paper_Fig_13m.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 32 </span><span class="caption-text">Paper Fig 13m</span><a class="headerlink" href="#id31" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id32">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_13r.jpg"><img alt="../_images/Paper_Fig_13r.jpg" src="../_images/Paper_Fig_13r.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text">Paper Fig 13r</span><a class="headerlink" href="#id32" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id33">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_14r.jpg"><img alt="../_images/Paper_Fig_14r.jpg" src="../_images/Paper_Fig_14r.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Paper Fig 14r</span><a class="headerlink" href="#id33" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id34">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15tl.jpg"><img alt="../_images/Paper_Fig_15tl.jpg" src="../_images/Paper_Fig_15tl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Paper Fig 15tl</span><a class="headerlink" href="#id34" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id35">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15tm.jpg"><img alt="../_images/Paper_Fig_15tm.jpg" src="../_images/Paper_Fig_15tm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 36 </span><span class="caption-text">Paper Fig 15tm</span><a class="headerlink" href="#id35" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id36">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15tr.jpg"><img alt="../_images/Paper_Fig_15tr.jpg" src="../_images/Paper_Fig_15tr.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Paper Fig 15tr</span><a class="headerlink" href="#id36" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id37">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15bl.jpg"><img alt="../_images/Paper_Fig_15bl.jpg" src="../_images/Paper_Fig_15bl.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">Paper Fig 15bl</span><a class="headerlink" href="#id37" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id38">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15bm.jpg"><img alt="../_images/Paper_Fig_15bm.jpg" src="../_images/Paper_Fig_15bm.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Paper Fig 15bm</span><a class="headerlink" href="#id38" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id39">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_15br.jpg"><img alt="../_images/Paper_Fig_15br.jpg" src="../_images/Paper_Fig_15br.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 40 </span><span class="caption-text">Paper Fig 15br</span><a class="headerlink" href="#id39" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id40">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_16l.jpg"><img alt="../_images/Paper_Fig_16l.jpg" src="../_images/Paper_Fig_16l.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Paper Fig 16l</span><a class="headerlink" href="#id40" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id41">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_16m.jpg"><img alt="../_images/Paper_Fig_16m.jpg" src="../_images/Paper_Fig_16m.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">Paper Fig 16m</span><a class="headerlink" href="#id41" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id42">
+<a class="reference internal image-reference" href="../_images/Paper_Fig_16r.jpg"><img alt="../_images/Paper_Fig_16r.jpg" src="../_images/Paper_Fig_16r.jpg" style="width: 256px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 43 </span><span class="caption-text">Paper Fig 16r</span><a class="headerlink" href="#id42" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="creating-your-own-presets">
+<h2>Creating Your own Presets<a class="headerlink" href="#creating-your-own-presets" title="Permalink to this heading">#</a></h2>
+<p>You can also easily create your own presets.
+Just open the snowflake sidebar menu, create or select a snowflake, enter the desired parameter values, click on the presets button and then on <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Preset</span></code>.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="parameters.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Parameters</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Guide</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Felix Thaler
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Presets</a><ul>
+<li><a class="reference internal" href="#how-to-apply-a-preset">How to Apply a Preset</a></li>
+<li><a class="reference internal" href="#gallery">Gallery</a></li>
+<li><a class="reference internal" href="#creating-your-own-presets">Creating Your own Presets</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    </body>
+</html>

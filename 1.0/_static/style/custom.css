@@ -1,0 +1,68 @@
+@font-face {
+  font-family: InterVariable;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("InterVariable.woff2") format("woff2");
+}
+@font-face {
+  font-family: InterVariable;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("InterVariable-Italic.woff2") format("woff2");
+}
+
+article {
+    line-height: 1.65;
+}
+
+section {
+    clear: left;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.4142em;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+figure.align-left {
+    clear: none;
+    float: left;
+    margin: 1em min(1em, 1vw) 1em min(1em, 1vw);
+}
+
+figure.sphinx-subfigure {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+figcaption > p:first-child {
+    margin-top: 0;
+}
+figcaption > p:last-child {
+    margin-bottom: 1em;
+}
+
+figcaption span.caption-number {
+    font-weight: bold;
+}
+figcaption span.caption-number::after {
+    content: " ";
+}
+
+div.admonition {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+li.toctree-l1 {
+    margin-top: 0.5em;
+}

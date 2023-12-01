@@ -1,0 +1,23 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Python API / Operators
+
+```{py:function} bpy.ops.snowflake.create(rho=0.635, random_rho=False, beta=1.6, random_beta=False, theta=0.025, random_theta=False, kappa=0.005, random_kappa=False, mu=0.015, random_mu=False, gamma=0.0005, random_gamma=False, sigma=0.0, random_sigma=False, delta_rho=0.0, random_delta_rho=False, thickness=0.01, scale=0.01, steps=10)
+
+Create a new snowflake with the given parameters and grow it (if `steps > 0`).
+For a description of the parameters, see the documentation of [](./parameters.md).
+
+The arguments `random_*` define if the respective parameter should be randomized.
+```
+
+```{py:function} bpy.ops.snowflake.grow(steps=100)
+
+Grow the currently selected snowflake by the given amount of steps.
+```
+
+```{py:function} bpy.ops.snowflake.randomize(rho=True, beta=True, alpha=True, theta=True, kappa=True, mu=True, gamma=True, sigma=False, delta_rho=False)
+
+Randomize the parameters of the currently selected snowflake.
+Note that `sigma` and `delta_rho` are not randomized by default.
+```
