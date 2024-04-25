@@ -1,0 +1,311 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Presets
+
+## How to Apply a Preset
+
+Presets can be found at the top of the sidebar menu.
+Just create a snowflake, select the preset and grow it!
+
+## Gallery
+
+These are renderings of all available presets.
+Currently, all presets are derived from the figures in the original publication {cite:p}`gravner2008`.
+
+```{note}
+The look of the presets depends a lot on the number of simulation steps.
+Here, we only show one picture per preset, but they can also look quite differently if you let them grow shorter or longer.
+```
+
+```{figure} ../_static/presets/Paper_Fig_2tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 2tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_2br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 2br
+```
+
+```{figure} ../_static/presets/Paper_Fig_4.jpg
+:width: 256px
+:align: left
+
+Paper Fig 4  
+```
+
+```{figure} ../_static/presets/Paper_Fig_6b.jpg
+:width: 256px
+:align: left
+
+Paper Fig 6b
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tl
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tm
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_9bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9bl
+```
+
+```{figure} ../_static/presets/Paper_Fig_9bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9bm
+```
+
+```{figure} ../_static/presets/Paper_Fig_9br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9br
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tl
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tm
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_10bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10bl
+```
+
+```{figure} ../_static/presets/Paper_Fig_10bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10bm
+```
+
+```{figure} ../_static/presets/Paper_Fig_10br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10br
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tl
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tm
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_11bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11bl
+```
+
+```{figure} ../_static/presets/Paper_Fig_11bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11bm
+```
+
+```{figure} ../_static/presets/Paper_Fig_11br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11br
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tl
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tm
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_12bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12bl
+```
+
+```{figure} ../_static/presets/Paper_Fig_12bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12bm
+```
+
+```{figure} ../_static/presets/Paper_Fig_12br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12br
+```
+
+```{figure} ../_static/presets/Paper_Fig_13l.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13l
+```
+
+```{figure} ../_static/presets/Paper_Fig_13m.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13m
+```
+
+```{figure} ../_static/presets/Paper_Fig_13r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13r
+```
+
+```{figure} ../_static/presets/Paper_Fig_14r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 14r
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tl
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tm
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tr
+```
+
+```{figure} ../_static/presets/Paper_Fig_15bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15bl
+```
+
+```{figure} ../_static/presets/Paper_Fig_15bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15bm
+```
+
+```{figure} ../_static/presets/Paper_Fig_15br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15br
+```
+
+```{figure} ../_static/presets/Paper_Fig_16l.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16l
+```
+
+```{figure} ../_static/presets/Paper_Fig_16m.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16m
+```
+
+```{figure} ../_static/presets/Paper_Fig_16r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16r
+```
+
+## Creating Your own Presets
+
+You can also easily create your own presets.
+Just open the snowflake sidebar menu, create or select a snowflake, enter the desired parameter values, click on the presets button and then on `New Preset`.

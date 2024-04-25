@@ -1,0 +1,92 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Quickstart
+
+
+## Growing Your First Snowflake
+
+Growing your first snowflake requires just 3 steps:
+
+1. Go to a 3D view and open the sidebar (us `View > Sidebar`), choose the submenu `Snowflake`.
+2. Press on the button `Create New` in the sidebar menu – see {numref}`first-snowflake` a). This creates a tiny snowflake that yet has to grow.
+3. Press on the button `1000 Steps` at the bottom of the sidebar menu (see {numref}`first-snowflake` again).
+
+That’s it, you’ve grown your first virtual snowflake!
+It should look like the one shown in {numref}`first-snowflake`.
+
+```{subfigure} AB
+:subcaptions: below
+:gap: 1em
+:name: first-snowflake
+
+![a) Sidebar menu](_static/sidebar-menu.png)
+![b) Your first snowflake](_static/first-snowflake.png)
+
+Snowflake creation using the sidebar menu.
+```
+
+
+## Further Growth
+
+You can always let any snowflake grow bigger.
+Just select a snowflake and press again on one of the growth control buttons in the sidebar.
+These allow to grow your snowflake with one click by 1, 10, 100, or 1000 steps.
+
+```{caution}
+Of course you can also grow by more than 1000 steps in one go, for example by setting the number of steps using Blender’s ‘Adjust Last Operator’ functionality (see the [official documentation](https://docs.blender.org/manual/en/latest/interface/undo_redo.html#adjust-last-operation) for more information).
+But always keep in mind that the full user interface will be blocked during growth, so don’t use too many steps at a time or Blender will just freeze forever!
+```
+
+It’s also possible to watch the snowflake grow interactively.
+For this, just select a snowflake and press on the button `Interactive` in the sidebar.
+In interactive growth mode, the UI does not freeze, and you can stop growth at any time by pressing your right mouse button or `ESC` on the keyboard.
+
+```{note}
+Interactive growth mode allows you to see your snowflake growing, but it’s usually slower to grow as mesh data has to be generated for each view update.
+Thus, to get results faster, use the other buttons for non-interactive growth.
+```
+
+
+## Changing Parameters
+
+The shape of the growing snowflake is defined by the 9 parameters with rather abstract Greek letters as names.
+Because the snowflake growth process is based on a rather complex physical model, their meaning is not particularly intuitive.
+To get started, it might be easiest to randomize one or multiple parameters (by clicking on the small dice on the right).
+With a click on `Randomize all`, you can also get very different results easily.
+Some combinations of values can lead to beautiful results, others to tiny lumps or plates.
+
+```{note}
+You can adjust the parameters of any snowflake at any time.
+However, the adjustments will only have a visible effect when you further grow the snowflake; the previously grown part will not change!
+```
+
+There are also many presets available which might work well as a starting point for further experimentation.
+You can select a preset in the header of the sidebar menu.
+Renderings of all presets can be found in the [](guide/presets.md) section of the guide.
+
+For an in-depth documentation of the parameters and some background of the simulation method, see [their documentation](guide/parameters.md).
+
+
+## Add-mesh Menu
+
+You might notice that there’s also an entry in the `Add > Mesh` menu to create snowflakes ({numref}`add-mesh-menu`).
+This is a fast and simple way to create *and* grow a snowflake in one go.
+However, there’s less control than in the sidebar menu.
+
+```{subfigure} AB
+:subcaptions: below
+:gap: 1em
+:name: add-mesh-menu
+
+![a) Add-mesh menu](_static/add-mesh-menu.png)
+![b) Create snowflake menu](_static/snowflake-create-menu.png)
+
+Fast creation and growth of a snowflake using the `Add > Mesh > Snowflake` menu.
+```
+
+## Where to Continue?
+
+Just generate some more random snowflakes, check out the [Presets Gallery](./guide/presets.md#gallery) for inspiration, or study the guide on [](guide/parameters.md).
+
+If you like to automatically generate some more flakes using Python, you should also check out the [Python API](guide/operators.md).
