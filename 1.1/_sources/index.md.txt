@@ -31,4 +31,5 @@ quickstart.md
 guide/index.md
 troubleshooting.md
 bibliography.md
+changelog.md
 ```

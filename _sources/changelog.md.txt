@@ -1,0 +1,10 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Changelog
+
+## Version 1.1.0
+
+- Fix compatibility with Blender 4.1.
+- Do not enable auto-smooth automatically, due to a change in Blender’s handling of auto-smooth in version 4.1.
+To get the same results as before, just manually apply the [‘Set Smooth by Angle’](https://docs.blender.org/manual/en/4.1/scene_layout/object/editing/shading.html#shade-smooth-by-angle) in Blender 4.1 or enable [‘Shade Auto Smooth’](https://docs.blender.org/manual/en/4.0/scene_layout/object/editing/shading.html#shade-auto-smooth) in Blender versions prior to 4.0.
