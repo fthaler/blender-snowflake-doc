@@ -33,6 +33,10 @@ h2 {
     margin-bottom: 1em;
 }
 
+figure {
+    display: table;
+}
+
 figure.align-left {
     clear: none;
     float: left;
@@ -42,6 +46,7 @@ figure.align-left {
 figure.sphinx-subfigure {
     margin-top: 2em;
     margin-bottom: 2em;
+    display: table;
 }
 
 figcaption > p:first-child {
@@ -60,6 +65,7 @@ figcaption span.caption-number::after {
 
 figcaption {
     display: table-caption;
+    caption-side: bottom;
     width: 100%;
 }
 
