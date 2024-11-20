@@ -1,0 +1,8 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Troubleshooting
+
+We hope that this documentation will guide you through the usage of the add-on in a useful manner!
+If you have any problem with the add-on or this documentation, of course we will try to help you.
+So, if you face a problem that you can’t solve without our help, please file an issue on [GitHub](https://github.com/fthaler/blender-snowflake-doc/issues).
