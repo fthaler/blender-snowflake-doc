@@ -1,0 +1,35 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Blender Snowflake Add-on Documentation
+
+*Version {{ env.config.version }}.*
+
+```{subfigure} ABC
+:layout-sm: AA|BC
+:gap: 1em
+
+![](_static/presets/Paper_Fig_10tl.jpg)
+![](_static/presets/Paper_Fig_14r.jpg)
+![](_static/presets/Paper_Fig_9bl.jpg)
+
+```
+
+Welcome to the documentation of the Blender Snowflake add-on!
+This add-on simulates snowflake growth based on a physical model.
+
+The model was invented by *Janko Gravner* and *David Griffeath* and presented in their 2007 paper *«Modeling snow crystal growth II: A mesoscopic lattice map with plausible dynamics»* {cite:p}`gravner2008`.
+
+This documentation leads you through the basic usage but also describes the (rather abstract) parameters of the physical model with some examples.
+Further, you’ll find the documentation of the implemented Blender operators.
+
+## Contents
+
+```{toctree}
+installation.md
+quickstart.md
+guide/index.md
+troubleshooting.md
+bibliography.md
+changelog.md
+```

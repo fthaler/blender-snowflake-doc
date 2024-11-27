@@ -1,0 +1,7 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Bibliography
+
+```{bibliography}
+```

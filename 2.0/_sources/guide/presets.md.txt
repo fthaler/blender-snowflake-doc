@@ -1,0 +1,316 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Presets
+
+## How to Apply a Preset
+
+Presets can be found at the top of the sidebar menu.
+Just create a snowflake, select the preset and grow it!
+
+## Gallery
+
+These are renderings of all available presets.
+Currently, all presets are derived from the figures in the original publication {cite:p}`gravner2008`.
+The number of simulation steps required to reproduce the presets is given in the captions.
+
+For presets 15bl, 15bm, and 15br, you should manually adapt some parameters as described in the caption.
+These parameter changes are identical to those presented in the original paper and allow simulating changing air conditions during the fall of a snowflake.
+
+```{note}
+The look of the presets depends a lot on the number of simulation steps.
+Here, we only show one picture per preset.
+However, they can also look quite differently if you let them grow shorter or longer.
+```
+
+```{figure} ../_static/presets/Paper_Fig_2tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 2tr, after 17000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_2br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 2br, after 6500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_4.jpg
+:width: 256px
+:align: left
+
+Paper Fig 4, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_6b.jpg
+:width: 256px
+:align: left
+
+Paper Fig 6b, after 8500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tl, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tm, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9tr, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9bl, after 24500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9bm, after 18000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_9br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 9br, after 10000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tl, after 5500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tm, after 10000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10tr, after 14500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10bl, after 22000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10bm, after 26500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_10br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 10br, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tl, after 5000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tm, after 5000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11tr, after 5000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11bl, after 5000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11bm, after 5000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_11br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 11br, after 5500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tl, after 9000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tm, after 11000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12tr, after 15500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12bl, after 22500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12bm, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_12br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 12br, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_13l.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13l, after 12000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_13m.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13m, after 30000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_13r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 13r, after 16000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_14r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 14r, after 23500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tl, after 10500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tm, after 9500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15tr.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15tr, after 15000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15bl.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15bl, after 11500 steps; parameter ρ reduced by 40% (set to 0.396) after 4000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15bm.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15bm, after 13000 steps; parameter ρ reduce by 30% (set to 0.455) and κ set to 0.01 after 10000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_15br.jpg
+:width: 256px
+:align: left
+
+Paper Fig 15br, after 6000 steps; parameter ρ reduced by 40% (set to 0.36) after 7500 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_16l.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16l, after 6000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_16m.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16m, after 7000 steps.
+```
+
+```{figure} ../_static/presets/Paper_Fig_16r.jpg
+:width: 256px
+:align: left
+
+Paper Fig 16r, after 22000 steps.
+```
+
+## Creating Your own Presets
+
+You can also easily create your own presets.
+Just open the snowflake sidebar menu, create or select a snowflake, enter the desired parameter values, click on the presets button and then on `New Preset`.

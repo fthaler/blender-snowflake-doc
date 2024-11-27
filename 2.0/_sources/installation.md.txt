@@ -1,0 +1,22 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Installation
+
+Download the add-on zip-file from [Gumroad](https://fthaler.gumroad.com) or [Blendermarket](https://blendermarket.com/creators/fthaler).
+Do *not* unpack the file, but follow the standard procedure for Blender add-on installation:
+
+1. Open [Blender](https://www.blender.org)
+2. Go to `Edit > Preferences > Add-ons`
+3. Click on `Install`
+4. Select the downloaded zip-file `snowflake-*.zip` and click on `Install Add-on`
+
+You are almost done now, but you also need to *enable* the add-on.
+To do so, enter ‘Snowflake’ in the search field.
+Now click on the small checkbox in front of ‘Object: Snowflake – A snowflake generator for Blender’.
+
+```{note}
+We try to support all officially supported Blender versions, that is, the [Blender LTS releases](https://www.blender.org/download/lts) as well as the [latest Blender version](https://www.blender.org/download).
+```
+
+For more details on add-ons and their installation, check out the [official Blender documentation about add-on management](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html).

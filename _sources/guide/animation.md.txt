@@ -1,0 +1,49 @@
+% SPDX-FileCopyrightText: 2023 Felix Thaler
+% SPDX-License-Identifier: GPL-3.0-or-later
+
+# Animation
+
+## Introduction
+
+By default, the add-on simulates the growth process of the snowflake and keeps the end result as a static mesh.
+However, you might also want to visualize the full process instead of only the final state and that’s exactly where the animation feature steps in.
+An example of simple a animation of snowflake growth is shown in {numref}`anim-example`.
+
+```{figure} ../_static/growing.gif
+:width: 512px
+:name: anim-example
+
+The full growth process of a snowflake.
+```
+
+Technically, the add-on saves the simulated frames to a Universal Scene Description (USD) file.
+This can then be reimported into Blender for further processing and rendering.
+Note however that the whole process is fully automated, so apart from clicking a button to enable the feature, no manual user interaction is required.
+
+## Export a Snowflake Growth Animation
+
+Enabling the animation feature is easy: just click on `Export Animation` in the sidebar.
+If you click that button, three new settings appear: `Steps per frame`, `Apply animation`, and `Animation file`.
+
+The setting `Steps per frame` essentially controls the animation speed, that is, how many simulation steps happen during one animation frame.
+Therefore, more simulation steps per frame means faster animation.
+
+`Apply animation` defines, if the animation is directly applied to the given snowflake as a Blender mesh cache modifier.
+The animation data is always exported to an external Universal Scene Description (USD) file.
+If this setting is enabled, the resulting USD file is automatically reimported, and you can directly scroll through the timeline to see your animated simulation result.
+
+Finally, `Animation file` controls, to which file the animation data is saved.
+This has to be some path with *.usd*, *.usda*, or *.usdc* extension.
+
+```{caution}
+Make sure to specify unique file names if you animate multiple snowflake in one scene.
+If not, one snowflake’s output can easily be overwritten by another’s!
+```
+
+If you now grow your snowflake – no matter if some fixed number of steps or interactively –, the growth process will be saved to the given USD file.
+You can even simulate some steps, change parameters, simulate some more steps, etc., and everything will be exported to USD.
+
+If `Apply animation` is set, you can also directly see the updated animation when scrolling through the timeline;
+If not, you can later re-import the USD file manually using Blender’s standard USD import functionality.
+Or import it into any other software which supports USD!
+
