@@ -19,3 +19,7 @@ To get the same results as before, just manually apply the [‘Set Smooth by Ang
 - Support for Blender 4.3.
 - New USD animation export functionality.
 - Re-enable auto-smooth functionality on all Blender versions except 4.1.x.
+
+## Version 2.0.1
+
+- Fix: don’t lose material during growth process.
